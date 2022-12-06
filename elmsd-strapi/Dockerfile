@@ -23,5 +23,6 @@ WORKDIR /opt/app
 COPY --from=build /opt/node_modules ./node_modules
 ENV PATH /opt/node_modules/.bin:$PATH
 COPY --from=build /opt/app ./
+RUN chmod -R 775 /opt/
 EXPOSE 1337
 CMD ["yarn", "start"]
