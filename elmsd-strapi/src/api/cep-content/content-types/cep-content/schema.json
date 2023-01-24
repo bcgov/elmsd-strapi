@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cep_contents",
+  "info": {
+    "singularName": "cep-content",
+    "pluralName": "cep-contents",
+    "displayName": "CEPContent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}
